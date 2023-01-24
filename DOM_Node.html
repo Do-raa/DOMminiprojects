@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    
+    <script> 
+        window.onload = function() { 
+            const myImg = document.querySelector("img") 
+            const myList = document.querySelector("ul") 
+            let header = document.getElementById("header")
+
+            console.log(myImg)  
+            console.log(myList)
+
+            let clonedNode = myImg.cloneNode(true) 
+            // clonedNode.style.marginBottom = "0px"
+            document.body.appendChild(clonedNode).style.marginBottom = "0px"
+        
+            myList.style.textAlign = "center"
+            header.style.textAlign = "right"
+  
+        }
+    </script>
+</head>
+
+<body>
+    <div class="center">
+        <div id="header">
+
+            <img src="dom.jpg" alt="hello..it rains over here:)" />
+        </div>
+        <div id="navigation">
+            <ul id="nav">
+                <li><strong>Memo</strong></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+
+
+</html>
